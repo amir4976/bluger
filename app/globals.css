@@ -26,10 +26,22 @@ body {
   background-repeat: repeat-y;
   background-color: #e7e7e7;
   color: var(--background);
-
+cursor: url("/assets/Asset 2.svg") 2 2, auto;
   font-family: var(--Main-Font),sans-serif;
 }
+
+
+a, button, [role="button"], [role="link"] {
+  cursor: url("/assets/link.png") 10 5, pointer !important;
+}
+
+
+.cursor-pointer {
+  cursor: url("/assets/link.png") 10 5, pointer !important;
+}
+
 
 .saconderybg{
   background-color:var(--sacondColor);
 }
+

@@ -1,5 +1,6 @@
 import MainLyout from "@/components/layouts/MainLayout";
 import BlugCards from "@/components/modules/main/BlugCards";
+import Link from "next/link";
 import React from "react";
 
 function page() {
@@ -7,15 +8,22 @@ function page() {
     <div>
       <MainLyout>
         <div className="grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 mt-10 gap-5">
+          <Link href={'/Posts/1'}>
           <BlugCards />
+          </Link>
+          <Link href={'/Posts/1'}>
           <BlugCards />
+          </Link>
+          <Link href={'/Posts/1'}>
           <BlugCards />
+          </Link>
+          <Link href={'/Posts/1'}>
           <BlugCards />
+          </Link>
+          <Link href={'/Posts/1'}>
           <BlugCards />
-          <BlugCards />
-          <BlugCards />
-          <BlugCards />
-          <BlugCards />
+          </Link>
+
         </div>
       </MainLyout>
     </div>
