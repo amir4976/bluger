@@ -1,0 +1,28 @@
+/*  */
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  white-space: nowrap;
+  background: transparent;
+  padding: 10px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: var(--sacondColor);
+  border: black 3px;
+}
+
+.marquee-content {
+  display: flex;
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+.marquee-content div {
+  font-size: 30px;
+  color: black;
+  padding: 0 20px;
+}
