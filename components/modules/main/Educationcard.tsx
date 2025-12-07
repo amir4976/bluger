@@ -28,7 +28,7 @@ function Educationcard({text,cover}:{text:string,cover:string}) {
           width={500}
           height={500}
           alt="education"
-          className="object-cover w-full h-full rounded-l-2xl max-md:rounded-t-2xl max-md:rounded-l-none"
+          className="object-cover w-full h-full rounded-l-2xl  max-md:rounded-t-2xl"
         />
       </div>
 
