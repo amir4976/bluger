@@ -4,13 +4,13 @@ import React, { useState } from "react";
 import RedirectBtn from "../RedirectBtn/RedirectBtn";
 
 
-function BlugCards() {
+function BlugCards({cover,text}:{cover:string,text:string}) {
     const [isHoverd , setIsHoverd] = useState<boolean>(false)    
   return (
     <div className="border-3 w-full flex flex-col p-5 cursor-pointer rounded-2xl bg-white" onMouseEnter={()=>{setIsHoverd(true)}} onMouseLeave={()=>{setIsHoverd(false)}} >
       <div className="image w-full relative">
         <Image
-          src={"/assets/post1.jpg"}
+          src={cover ? cover : "/assets/post1.jpg"}
           width={500}
           height={500}
           alt="cover"
@@ -26,7 +26,7 @@ function BlugCards() {
         </div>
       </div>
       <div className="title text-4xl mt-5 ">
-        Tech Talk: Advancements in Science and Tech
+        {text}
       </div>
       <div className="date border-t-2 border-b-2  mt-5 text-2xl py-2 flex justify-between">
         <div className="">April 21, 2024</div>

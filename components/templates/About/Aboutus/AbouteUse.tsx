@@ -6,8 +6,8 @@ function AbouteUse() {
     <div className="w-full h-fit border-3 rounded-2xl grid grid-cols-2 max-md:grid-cols-1 p-5 gap-5 bg-white mt-10">
       <div className="">
         <Image
-          className="rounded-2xl w-full h-fit"
-          src={"/assets/post1.jpg"}
+          className="rounded-2xl w-full h-fit sticky top-5 border-3"
+          src={"/assets/covers/about.jpg"}
           width={500}
           height={500}
           alt="profile"

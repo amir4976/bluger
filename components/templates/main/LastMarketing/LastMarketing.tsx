@@ -7,8 +7,8 @@ function LastMarketing() {
     <div className={"mt-20"}>
       <Title text={"MARKETING"} />
       <div className="grid grid-cols-2 max-md:grid-cols-1 gap-10">
-        <MarketingCard />
-        <MarketingCard />
+        <MarketingCard text={"Tech Talk: Advancements in Science and Tech"} cover={"/assets/covers/m1.jpg"} />
+        <MarketingCard text={"Tech Talk: Advancements in Science and Tech"} cover={"/assets/covers/m2.jpg"} />
       </div>
     </div>
   );

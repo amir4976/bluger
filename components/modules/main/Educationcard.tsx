@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import RedirectBtn from "../RedirectBtn/RedirectBtn";
 
-function Educationcard() {
+function Educationcard({text,cover}:{text:string,cover:string}) {
   const [isHoverd, setIsHoverd] = useState<boolean>(false);
 
   return (
@@ -24,7 +24,7 @@ function Educationcard() {
     >
       <div className="w-[500px] max-md:w-full max-md:h-[250px] h-full overflow-hidden">
         <Image
-          src={"/assets/post1.jpg"}
+          src={cover ? cover : "/assets/post1.jpg"}
           width={500}
           height={500}
           alt="education"
@@ -34,7 +34,7 @@ function Educationcard() {
 
       <div className="flex flex-1 flex-col p-10 max-md:p-5 relative">
         <div className="title text-5xl max-md:text-4xl mt-5 ">
-          Tech Talk: Advancements in Science and Tech
+          {text}
         </div>
 
         <div className="date border-t-2 border-b-2 mt-5 text-2xl max-md:text-lg py-2 flex justify-between">

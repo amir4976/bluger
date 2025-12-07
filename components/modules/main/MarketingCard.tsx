@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import RedirectBtn from "../RedirectBtn/RedirectBtn";
 import { BsFillChatSquareQuoteFill } from "react-icons/bs";
 
-function MarketingCard() {
+function MarketingCard({text,cover}:{text:string , cover:string}) {
   const [isHoverd, setIsHoverd] = useState<boolean>(false);
 
   return (
@@ -22,7 +22,7 @@ function MarketingCard() {
             
         <div className="image w-full relative">
           <Image
-            src={"/assets/post1.jpg"}
+            src={cover ? cover : "/assets/post1.jpg"}
             width={500}
             height={500}
             alt="cover"
@@ -38,7 +38,7 @@ function MarketingCard() {
           </div>
         </div>
         <div className="title text-4xl mt-5 ">
-          Tech Talk: Advancements in Science and Tech
+         {text}
         </div>
         <div className="date border-t-2 border-b-2  mt-5 text-2xl py-2 flex justify-between">
           <div className="">April 21, 2024</div>

@@ -6,9 +6,9 @@ function LastEducations() {
   return (
     <div className='flex flex-col gap-5 mt-20'>
         <Title text={"education"}/>
-        <Educationcard/>
-        <Educationcard/>
-        <Educationcard/>
+        <Educationcard text={"Tech Talk: Advancements in Science and Tech"} cover={"/assets/covers/e1.jpg"}/>
+        <Educationcard text={"Tech Talk: Advancements in Science and Tech"} cover={"/assets/covers/e2.jpg"}/>
+        <Educationcard text={"Tech Talk: Advancements in Science and Tech"} cover={"/assets/covers/e3.jpg"}/>
     </div>
   )
 }

@@ -9,7 +9,7 @@ function page() {
         <div className="grid grid-cols-2 max-md:grid-cols-1 gap-5 mt-10">
           <div className="bg-white border-3 rounded-2xl p-5 sticky h-fit top-5 max-md:relative">
             <Image
-              src={"/assets/post1.jpg"}
+              src={"/assets/covers/e1.jpg"}
               width={500}
               height={500}
               alt="cover"
