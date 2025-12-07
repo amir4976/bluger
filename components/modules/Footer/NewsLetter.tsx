@@ -20,9 +20,9 @@ function NewsLetter() {
           in your inbox!
         </p>
       </div>
-      <div className="w-90 relative">
+      <div className="w-90 relative max-md:w-full" >
             <input type="text"  placeholder="your email" className="w-full h-15 rounded-full p-5 border-3  bg-white"/>
-            <button className="absolute right-0  h-15 rounded-full saconderybg px-5 text-xl border-3 ">subscribe</button>
+            <button className="absolute right-0  h-15 rounded-full saconderybg px-5 text-xl border-3  ">subscribe</button>
       </div>
     </div>
   );

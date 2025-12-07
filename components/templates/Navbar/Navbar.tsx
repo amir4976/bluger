@@ -42,11 +42,11 @@ function Navbar() {
           ${open ? "top-28 opacity-100 pointer-events-auto" : "top-20 opacity-0 pointer-events-none"}
         `}
       >
-        <div className="hover:underline cursor-pointer">Home</div>
-        <div className="hover:underline cursor-pointer">About</div>
-        <div className="hover:underline cursor-pointer">Categories</div>
-        <div className="hover:underline cursor-pointer">Posts</div>
-        <div className="hover:underline cursor-pointer">Contact</div>
+        <div className="hover:underline cursor-pointer"><Link href={'/'}>Home</Link></div>
+        <div className="hover:underline cursor-pointer"><Link href={'/About'}>About</Link></div>
+        <div className="hover:underline cursor-pointer"><Link href={'/Categories'}>Categories</Link></div>
+        <div className="hover:underline cursor-pointer"><Link href={'/Posts'}>Posts</Link></div>
+        <div className="hover:underline cursor-pointer"><Link href={'/contact'}>Contact</Link></div>
       </div>
     </div>
   );

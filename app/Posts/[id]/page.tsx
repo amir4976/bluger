@@ -7,7 +7,7 @@ function page() {
     <div>
       <MainLyout>
         <div className="grid grid-cols-2 max-md:grid-cols-1 gap-5 mt-10">
-          <div className="bg-white border-3 rounded-2xl p-5 sticky h-fit top-5 ">
+          <div className="bg-white border-3 rounded-2xl p-5 sticky h-fit top-5 max-md:relative">
             <Image
               src={"/assets/post1.jpg"}
               width={500}
@@ -16,7 +16,7 @@ function page() {
               className="object-fill w-full h-full rounded-2xl"
             />
           </div>
-          <div className="border-3 p-5 bg-white rounded-2xl">
+          <div className="border-3 p-5 bg-white rounded-2xl max-md:mt-10">
             <div className="title text-4xl mt-5 ">
               Tech Talk: Advancements in Science and Tech
             </div>

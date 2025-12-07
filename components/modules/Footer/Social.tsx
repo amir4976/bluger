@@ -7,7 +7,7 @@ function Social() {
       style={{ backgroundImage: 'url("/assets/social-bg.jpg")' }}
       className="w-full h-fit border-3 rounded-3xl p-10 min-h-84 "
     >
-      <div className="saconderybg w-full h-fit border-3 rounded-3xl grid grid-cols-2 p-5 gap-5 ">
+      <div className="saconderybg w-full h-fit border-3 rounded-3xl grid grid-cols-2  max-md:grid-cols-1 p-5 gap-5 ">
         <div className="relative flex items-center justify-start py-5 gap-5">
           <Image src="/assets/ins.png" width={50} height={50} alt="icon" />
         <p className="text-2xl ">facebook</p>
