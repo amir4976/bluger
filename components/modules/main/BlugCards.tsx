@@ -7,7 +7,7 @@ import RedirectBtn from "../RedirectBtn/RedirectBtn";
 function BlugCards({cover,text}:{cover:string,text:string}) {
     const [isHoverd , setIsHoverd] = useState<boolean>(false)    
   return (
-    <div className="border-3 w-full flex flex-col p-5 cursor-pointer rounded-2xl bg-white" onMouseEnter={()=>{setIsHoverd(true)}} onMouseLeave={()=>{setIsHoverd(false)}} >
+    <div className="border-3 w-full flex flex-col p-5 cursor-pointer rounded-2xl bg-white hover:-translate-y-3 shadow-main" onMouseEnter={()=>{setIsHoverd(true)}} onMouseLeave={()=>{setIsHoverd(false)}} >
       <div className="image w-full relative">
         <Image
           src={cover ? cover : "/assets/post1.jpg"}
